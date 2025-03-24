@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+
+}
+
+.disIskelet {
+    background-color: yellow;
+    width: 350px;
+    height: 700px;
+}
+
+#height, #weight{
+    width: 150px;
+    height:25px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h1,p{
+    padding-left:20px;
+    padding-top: 25px;
+}
+
+button{
+    width: 150px;
+    height:40px;
+    margin-left:110px;
+    margin-top:25px;
+    border-radius: 15px;
+    border-style:none;
+    background-color:#017020;
+    color: #fff;
+    font-size: 15px;
+
+}
+#results {
+    font-size: 35px;
+    margin-left: 150px;
+    margin-top:20px;
+    color:green;
+}
+
+#weight-guide {
+text-align: center;
+}
