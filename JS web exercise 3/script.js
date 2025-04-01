@@ -41,3 +41,20 @@ if(task){
 }
 
 });
+
+
+// 3. Counter Section
+const counterValue = document.getElementById('counterValue');
+const incrementBtn = document.getElementById('incrementBtn');
+const logContainer = document.getElementById('logContainer');
+
+let count = 0;
+
+incrementBtn.addEventListener('click', function() {
+    count++;
+    counterValue.textContent = count;
+
+    // Log the action with innerHTML
+    const timestamp = new Date().toLocaleTimeString();
+    logContainer.innerHTML += `<p><small>${timestamp}:</small> Counter increased to <b>${count}</b></p>`;
+});
