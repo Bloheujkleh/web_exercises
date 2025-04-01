@@ -2,15 +2,16 @@ const button = document.getElementById('amabutonu');
 const userNameInput = document.getElementById('amaIsimi');
 const Greet = document.getElementById('AmMesaji');
 
-button.addEventListener('click',function(){
+button.addEventListener('click', function(event) {
+
+    event.preventDefault();
+
     const userName = userNameInput.value;
 
-    if(userName){
-        Greet.textContent = `selamm, ${userName} (^^) Welcome to Bulent's learned Js project`;
+    if (userName) {
+        Greet.textContent = `Selamm, ${userName} (^^) Welcome to Bulent's learned Js project`;
+    } else {
+        Greet.textContent = 'Please enter your name!';
     }
-    else{
-        Greet.textContent='pLEASE eNTER yOUR nAME : ';
-    }
-    userNameInput.value= '';
-
+    userNameInput.value = ''; // Inputu sıfırla
 });

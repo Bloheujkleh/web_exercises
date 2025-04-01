@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bos isler icin proje ~ Project for losers </title>
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center mt-4 vh-100">
+        <div id="ilkTask" class = "text-center ">
+            <h3>Ma Mühendisliği Stajyer Alim formu</h3>
+            <form id = "userForm">
+                <label for ="userName">Name:</label>
+                <input type = "name" id="userName" class="form-control" placeholder="Enter your name" required>
+                <label for="userEmail" class="mt-2">Email:</label>
+                <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary mt-3">Save Information</button>
+            </form>
+    <p id="userMessage" class="mt-3"></p>
+</div>
+
+<div id="taskSection" class="mt-5">
+    <h3>Task List</h3>
+    <input type="text" id="taskInput" class="form-control" placeholder="Enter Task" required>
+    <button id="addButton" class="btn btn-success mt-3">Add Task</button>
+    <ul id="taskList" class="mt-3 list-group"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
